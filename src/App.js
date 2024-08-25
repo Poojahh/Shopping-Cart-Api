@@ -3,6 +3,7 @@ import './App.css';
 import AddProducts from './components/AddProducts';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SearchProducts from './components/SearchProducts';
+import ViewProducts from './components/ViewProducts';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
       <Route path="/" element={<AddProducts/>}/>
       <Route path="/search" element={<SearchProducts/>}/>
+      <Route path="/view" element={<ViewProducts/>}/>
       </Routes>
       </BrowserRouter>
     </div>
